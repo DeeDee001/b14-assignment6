@@ -11,7 +11,7 @@ export function Hero() {
             <span className="h-px w-8 bg-[#ccff00]" /> Workout Library
           </p>
           <h1 className="font-display max-w-4xl text-[clamp(3.1rem,8vw,7.2rem)] font-black uppercase leading-[0.84] tracking-[-0.04em]">
-            Train with intent.<br /><span className="text-white/45">Log every set.</span>
+            Train with intent Log.<br /><span className="text-white/45">every set.</span>
           </h1>
           <p className="mt-7 max-w-xl text-base leading-7 text-white/55 sm:text-lg">
             FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today&apos;s plan, and watch the week&apos;s work add up.

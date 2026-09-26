@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0b0b0b]/95 backdrop-blur-xl">
       <div className="mx-auto flex min-h-[76px] max-w-[1440px] items-center justify-between gap-6 px-5 sm:px-8 lg:px-10">
         <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid size-10 place-items-center bg-[#ccff00] text-black transition-transform group-hover:rotate-6">
+          <span className="grid size-10 place-items-center text-black transition-transform group-hover:rotate-6">
             <Image src="/assets/logo.png" alt="" width={28} height={28} />
           </span>
           <span className="font-display text-xl font-black tracking-[0.12em]">FITLOG</span>
