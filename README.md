@@ -1,50 +1,42 @@
 # FitLog
 
-A responsive dark-mode workout library and daily training log built from the FitLog API and designed around the supplied Figma direction.
+FitLog is a responsive workout library and training planner. Browse exercises, review workout details, and build a daily plan that stays saved in your browser.
+
+## Features
+
+- Browse a workout library with exercise imagery, muscle groups, equipment, and key stats.
+- Open dedicated workout detail pages with descriptions, specifications, and instructions.
+- Add up to five workouts to today's plan, with duplicate and capacity checks.
+- Save workouts for later and manage saved items separately from the daily plan.
+- Persist planned and saved workouts in `localStorage` across browser reloads.
+- Track exercise, duration, and calorie totals for the active list.
+- Sort plan and saved workouts by duration, calories, or rating.
+- Mark planned workouts as complete, remove items, and receive action feedback.
+- Use the library and plan pages on mobile, tablet, and desktop layouts.
 
 ## Technologies
 
-- Next.js App Router
-- React + TypeScript
-- Tailwind CSS
-- daisyUI
-- Lucide React icons
-- FitLog REST API
-- localStorage for plan/saved persistence
+- [Next.js 15](https://nextjs.org/) with the App Router
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) and [DaisyUI](https://daisyui.com/)
+- [Lucide React](https://lucide.dev/) icons
+- FitLog workout API: `https://api.abcz.workers.dev/api/fitlog`
 
-## Key Features
+## Getting Started
 
-1. Responsive workout library with API-powered cards.
-2. Workout detail pages with specs and instructions.
-3. Today's Plan with a five-lift cap.
-4. Saved workouts tab with persistent localStorage.
-5. Live plan metrics for exercises, minutes, and calories.
-6. Sort library by duration, calories, or rating.
-7. Toast feedback for plan/save/done/remove actions.
-8. Custom 404 and loading states.
-9. Mobile navigation and responsive layouts.
-
-## API
-
-- All workouts: `https://api.abcz.workers.dev/api/fitlog`
-- Single workout: `https://api.abcz.workers.dev/api/fitlog/:id`
-
-## Run locally
+Requires Node.js and npm. From the project directory, install dependencies and start the development server:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Git
-
-Use small meaningful commits, for example:
+## Production Build
 
 ```bash
-git add .
-git commit -m "build workout library cards"
-git commit -m "add workout detail page"
-git commit -m "add my plan persistence"
+npm run build
+npm run start
 ```
